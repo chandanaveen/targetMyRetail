@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: myRetail-ProductService
+  data:
+    rest:
+      base-path: /product
+    cassandra:
+      contact-points: localhost
+      keyspace-name: myretail
+      port: 9042
+      username: cassandra
+      password: cassandra
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+connect.timeout: 10000
+read.timeout: 10000
+
+redsky.product:
+  get: http://redsky.target.com/v2/pdp/tcin/{productId}?excludes=taxonomy,price,promotion,bulk_ship,rating_and_review_reviews,rating_and_review_statistics,question_answer_statistics
+
+logging.level.org.springframework.data: debug
+logging.level.: error
