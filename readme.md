@@ -23,4 +23,4 @@ Project :
 2. navigate to the root folder using git bash or windows command line
 3. run the command maven clean package
 4. Navigate <root path to cloned project >\myretail\target\
-5. Run the command java -jar myretail-0.0.1-SNAPSHOT.jar
+5. Run the command java -jar targetMyRetail-0.0.1-SNAPSHOT.jar

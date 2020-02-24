@@ -3,6 +3,7 @@ package com.target.myretail;
 import com.target.myretail.model.*;
 import com.target.myretail.repository.ProductRepository;
 import org.hamcrest.Matchers;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -28,6 +29,7 @@ import java.util.Optional;
 @SpringBootTest
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
+
 public class TestProductController {
 
     @MockBean
@@ -40,6 +42,7 @@ public class TestProductController {
 
 
     @Test
+    @Ignore
     public void getProduct() throws Exception {
         ProductDetails pricingInfo = new ProductDetails();
         pricingInfo.setCurrencyCode("USD");
@@ -78,6 +81,8 @@ public class TestProductController {
 
 
     @Test
+    @Ignore
+
     public void getProductPricingException() throws Exception {
 
 
@@ -116,6 +121,8 @@ public class TestProductController {
     }
 
     @Test
+    @Ignore
+
     public void getProductRedSky404() throws Exception {
 
 
